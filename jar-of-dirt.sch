@@ -1,0 +1,393 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:JamJar-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM386 U1
+U 1 1 5F3D10C3
+P 4100 2700
+F 0 "U1" H 4150 3000 50  0000 L CNN
+F 1 "LM386" H 4150 2900 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 4200 2800 50  0001 C CNN
+F 3 "" H 4300 2900 50  0001 C CNN
+	1    4100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5F3D1426
+P 2750 2600
+F 0 "C1" H 2775 2700 50  0000 L CNN
+F 1 "100n" H 2775 2500 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 2788 2450 50  0001 C CNN
+F 3 "" H 2750 2600 50  0001 C CNN
+	1    2750 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5F3D11C8
+P 3700 3200
+F 0 "#PWR01" H 3700 2950 50  0001 C CNN
+F 1 "GND" H 3700 3050 50  0000 C CNN
+F 2 "" H 3700 3200 50  0001 C CNN
+F 3 "" H 3700 3200 50  0001 C CNN
+	1    3700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5F3D1526
+P 2600 2950
+F 0 "#PWR02" H 2600 2700 50  0001 C CNN
+F 1 "GND" H 2600 2800 50  0000 C CNN
+F 2 "" H 2600 2950 50  0001 C CNN
+F 3 "" H 2600 2950 50  0001 C CNN
+	1    2600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5F3D160B
+P 3500 1750
+F 0 "#PWR03" H 3500 1500 50  0001 C CNN
+F 1 "GND" H 3500 1600 50  0000 C CNN
+F 2 "" H 3500 1750 50  0001 C CNN
+F 3 "" H 3500 1750 50  0001 C CNN
+	1    3500 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C2
+U 1 1 5F3D1990
+P 3850 2200
+F 0 "C2" H 3875 2300 50  0000 L CNN
+F 1 "220u" H 3875 2100 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 3888 2050 50  0001 C CNN
+F 3 "" H 3850 2200 50  0001 C CNN
+	1    3850 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L POT Gain1
+U 1 1 5F3D1BFD
+P 4250 3550
+F 0 "Gain1" V 4075 3550 50  0000 C CNN
+F 1 "10k" V 4150 3550 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339S_Vertical" H 4250 3550 50  0001 C CNN
+F 3 "" H 4250 3550 50  0001 C CNN
+	1    4250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5F3D1D40
+P 4100 2250
+F 0 "C3" H 4125 2350 50  0000 L CNN
+F 1 "100n" H 4125 2150 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 4138 2100 50  0001 C CNN
+F 3 "" H 4100 2250 50  0001 C CNN
+	1    4100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5F3D1F10
+P 5400 2850
+F 0 "R1" V 5480 2850 50  0000 C CNN
+F 1 "10" V 5400 2850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 5330 2850 50  0001 C CNN
+F 3 "" H 5400 2850 50  0001 C CNN
+	1    5400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5F3D209A
+P 5400 3150
+F 0 "C4" H 5425 3250 50  0000 L CNN
+F 1 "47n" H 5425 3050 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 5438 3000 50  0001 C CNN
+F 3 "" H 5400 3150 50  0001 C CNN
+	1    5400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5F3D20E2
+P 5400 3300
+F 0 "#PWR04" H 5400 3050 50  0001 C CNN
+F 1 "GND" H 5400 3150 50  0000 C CNN
+F 2 "" H 5400 3300 50  0001 C CNN
+F 3 "" H 5400 3300 50  0001 C CNN
+	1    5400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C5
+U 1 1 5F3D21BE
+P 5700 2700
+F 0 "C5" H 5725 2800 50  0000 L CNN
+F 1 "220u" H 5725 2600 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 5738 2550 50  0001 C CNN
+F 3 "" H 5700 2700 50  0001 C CNN
+	1    5700 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Speaker LS1
+U 1 1 5F3D2596
+P 6300 2700
+F 0 "LS1" H 6350 2925 50  0000 R CNN
+F 1 "Speaker" H 6350 2850 50  0000 R CNN
+F 2 "Wire_Connections_Bridges:WireConnection_2.00mmDrill" H 6300 2500 50  0001 C CNN
+F 3 "" H 6290 2650 50  0001 C CNN
+	1    6300 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5F3D2A2C
+P 5950 2450
+F 0 "#PWR05" H 5950 2200 50  0001 C CNN
+F 1 "GND" H 5950 2300 50  0000 C CNN
+F 2 "" H 5950 2450 50  0001 C CNN
+F 3 "" H 5950 2450 50  0001 C CNN
+	1    5950 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 5F3E5365
+P 3200 2200
+F 0 "R2" V 3280 2200 50  0000 C CNN
+F 1 "470" V 3200 2200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 3130 2200 50  0001 C CNN
+F 3 "" H 3200 2200 50  0001 C CNN
+	1    3200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5F3E53B1
+P 3200 1900
+F 0 "D1" H 3200 2000 50  0000 C CNN
+F 1 "LED" H 3200 1800 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 3200 1900 50  0001 C CNN
+F 3 "" H 3200 1900 50  0001 C CNN
+	1    3200 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Battery_Cell BT1
+U 1 1 5F3F3704
+P 2350 2000
+F 0 "BT1" H 2450 2100 50  0000 L CNN
+F 1 "Battery" H 2450 2000 50  0000 L CNN
+F 2 "Wire_Connections_Bridges:WireConnection_2.00mmDrill" V 2350 2060 50  0001 C CNN
+F 3 "" V 2350 2060 50  0001 C CNN
+	1    2350 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L POT Volume1
+U 1 1 5F3F5D2E
+P 3250 2750
+F 0 "Volume1" V 3075 2750 50  0000 C CNN
+F 1 "10k" V 3150 2750 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339S_Vertical" H 3250 2750 50  0001 C CNN
+F 3 "" H 3250 2750 50  0001 C CNN
+	1    3250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5F3F60C4
+P 3250 3050
+F 0 "#PWR06" H 3250 2800 50  0001 C CNN
+F 1 "GND" H 3250 2900 50  0000 C CNN
+F 2 "" H 3250 3050 50  0001 C CNN
+F 3 "" H 3250 3050 50  0001 C CNN
+	1    3250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C6
+U 1 1 5F3F6879
+P 4400 3150
+F 0 "C6" H 4425 3250 50  0000 L CNN
+F 1 "10u" H 4425 3050 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 4438 3000 50  0001 C CNN
+F 3 "" H 4400 3150 50  0001 C CNN
+	1    4400 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L POT Tone1
+U 1 1 5F3F8A19
+P 4900 3350
+F 0 "Tone1" V 4725 3350 50  0000 C CNN
+F 1 "10k" V 4800 3350 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339S_Vertical" H 4900 3350 50  0001 C CNN
+F 3 "" H 4900 3350 50  0001 C CNN
+	1    4900 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C7
+U 1 1 5F3F8B55
+P 4900 2900
+F 0 "C7" H 4925 3000 50  0000 L CNN
+F 1 "33n" H 4925 2800 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 4938 2750 50  0001 C CNN
+F 3 "" H 4900 2900 50  0001 C CNN
+	1    4900 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C8
+U 1 1 5F3F932D
+P 3500 2200
+F 0 "C8" H 3525 2300 50  0000 L CNN
+F 1 "10u" H 3525 2100 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 3538 2050 50  0001 C CNN
+F 3 "" H 3500 2200 50  0001 C CNN
+	1    3500 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Audio-Jack-2 J1
+U 1 1 5F3FB3CD
+P 2400 2600
+F 0 "J1" H 2375 2675 50  0000 C CNN
+F 1 "Input" H 2375 2425 50  0000 C CNN
+F 2 "Wire_Connections_Bridges:WireConnection_1.50mmDrill" H 2650 2600 50  0001 C CNN
+F 3 "" H 2650 2600 50  0001 C CNN
+	1    2400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 5F41C6B7
+P 2750 2350
+F 0 "D2" H 2750 2450 50  0000 C CNN
+F 1 "1N4001" H 2750 2250 50  0000 C CNN
+F 2 "Diodes_THT:D_A-405_P10.16mm_Horizontal" H 2750 2350 50  0001 C CNN
+F 3 "" H 2750 2350 50  0001 C CNN
+	1    2750 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 2700 2600 2950
+Wire Wire Line
+	4000 2350 4000 2400
+Connection ~ 3850 2350
+Wire Wire Line
+	5950 2450 5950 2600
+Wire Wire Line
+	5950 2600 6100 2600
+Connection ~ 3200 2350
+Wire Wire Line
+	4100 1750 4100 2100
+Connection ~ 3200 1750
+Connection ~ 3500 1750
+Wire Wire Line
+	3850 1750 3850 2050
+Connection ~ 3850 1750
+Wire Wire Line
+	2900 2600 3250 2600
+Wire Wire Line
+	3400 2750 3550 2750
+Wire Wire Line
+	3550 2750 3550 2600
+Wire Wire Line
+	3550 2600 3800 2600
+Wire Wire Line
+	3250 2900 3250 3050
+Wire Wire Line
+	3800 2800 3700 2800
+Wire Wire Line
+	3700 2800 3700 3200
+Wire Wire Line
+	4000 3000 4000 3100
+Wire Wire Line
+	4000 3100 3700 3100
+Connection ~ 3700 3100
+Wire Wire Line
+	4400 2700 5550 2700
+Wire Wire Line
+	4900 2700 4900 2750
+Wire Wire Line
+	4900 3050 4900 3200
+Wire Wire Line
+	4200 3000 4400 3000
+Wire Wire Line
+	4400 3300 4400 3550
+Wire Wire Line
+	4250 3250 4250 3400
+Wire Wire Line
+	4100 3250 4100 3000
+Wire Wire Line
+	4400 3350 4750 3350
+Connection ~ 4900 2700
+Connection ~ 5400 2700
+Wire Wire Line
+	5850 2700 6100 2700
+Wire Wire Line
+	3500 2050 3500 1750
+Connection ~ 3500 2350
+Wire Wire Line
+	2350 1750 2350 1900
+Wire Wire Line
+	2350 2200 2350 2350
+Wire Wire Line
+	2350 1750 4100 1750
+Wire Wire Line
+	2350 2350 2600 2350
+Wire Wire Line
+	2900 2350 4000 2350
+Wire Wire Line
+	4100 3250 4250 3250
+Connection ~ 4400 3350
+$EndSCHEMATC
