@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name jar-of-dirt-rescue)(type Legacy)(uri ${KIPRJMOD}/jar-of-dirt-rescue.lib)(options "")(descr ""))
+)

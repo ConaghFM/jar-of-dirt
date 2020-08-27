@@ -1,5 +1,35 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:JamJar-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +44,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L jar-of-dirt-rescue:LM386 U1
+L LM386 U1
 U 1 1 5F3D10C3
 P 4100 2700
 F 0 "U1" H 4150 3000 50  0000 L CNN
@@ -25,7 +55,7 @@ F 3 "" H 4300 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L C C1
 U 1 1 5F3D1426
 P 2750 2600
 F 0 "C1" H 2775 2700 50  0000 L CNN
@@ -36,7 +66,7 @@ F 3 "" H 2750 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR01
+L GND #PWR01
 U 1 1 5F3D11C8
 P 3700 3200
 F 0 "#PWR01" H 3700 2950 50  0001 C CNN
@@ -47,7 +77,7 @@ F 3 "" H 3700 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L GND #PWR02
 U 1 1 5F3D1526
 P 2600 2950
 F 0 "#PWR02" H 2600 2700 50  0001 C CNN
@@ -58,7 +88,7 @@ F 3 "" H 2600 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L GND #PWR03
 U 1 1 5F3D160B
 P 3500 1750
 F 0 "#PWR03" H 3500 1500 50  0001 C CNN
@@ -69,7 +99,7 @@ F 3 "" H 3500 1750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:CP C2
+L CP C2
 U 1 1 5F3D1990
 P 3850 2200
 F 0 "C2" H 3875 2300 50  0000 L CNN
@@ -80,7 +110,7 @@ F 3 "" H 3850 2200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L jar-of-dirt-rescue:POT Gain1
+L POT Gain1
 U 1 1 5F3D1BFD
 P 4250 3550
 F 0 "Gain1" V 4075 3550 50  0000 C CNN
@@ -91,7 +121,7 @@ F 3 "" H 4250 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
+L C C3
 U 1 1 5F3D1D40
 P 4100 2250
 F 0 "C3" H 4125 2350 50  0000 L CNN
@@ -102,7 +132,7 @@ F 3 "" H 4100 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L R R1
 U 1 1 5F3D1F10
 P 5400 2850
 F 0 "R1" V 5480 2850 50  0000 C CNN
@@ -113,7 +143,7 @@ F 3 "" H 5400 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L C C4
 U 1 1 5F3D209A
 P 5400 3150
 F 0 "C4" H 5425 3250 50  0000 L CNN
@@ -124,7 +154,7 @@ F 3 "" H 5400 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L GND #PWR04
 U 1 1 5F3D20E2
 P 5400 3300
 F 0 "#PWR04" H 5400 3050 50  0001 C CNN
@@ -135,7 +165,7 @@ F 3 "" H 5400 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C5
+L CP C5
 U 1 1 5F3D21BE
 P 5700 2700
 F 0 "C5" H 5725 2800 50  0000 L CNN
@@ -146,7 +176,7 @@ F 3 "" H 5700 2700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Speaker LS1
+L Speaker LS1
 U 1 1 5F3D2596
 P 6300 2700
 F 0 "LS1" H 6350 2925 50  0000 R CNN
@@ -157,7 +187,7 @@ F 3 "" H 6290 2650 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR05
+L GND #PWR05
 U 1 1 5F3D2A2C
 P 5950 2450
 F 0 "#PWR05" H 5950 2200 50  0001 C CNN
@@ -168,7 +198,7 @@ F 3 "" H 5950 2450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R2
+L R R2
 U 1 1 5F3E5365
 P 3200 2200
 F 0 "R2" V 3280 2200 50  0000 C CNN
@@ -179,7 +209,7 @@ F 3 "" H 3200 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D1
+L LED D1
 U 1 1 5F3E53B1
 P 3200 1900
 F 0 "D1" H 3200 2000 50  0000 C CNN
@@ -190,7 +220,7 @@ F 3 "" H 3200 1900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Battery_Cell BT1
+L Battery_Cell BT1
 U 1 1 5F3F3704
 P 2350 2000
 F 0 "BT1" H 2450 2100 50  0000 L CNN
@@ -201,7 +231,7 @@ F 3 "" V 2350 2060 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L jar-of-dirt-rescue:POT Volume1
+L POT Volume1
 U 1 1 5F3F5D2E
 P 3250 2750
 F 0 "Volume1" V 3075 2750 50  0000 C CNN
@@ -212,7 +242,7 @@ F 3 "" H 3250 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L GND #PWR06
 U 1 1 5F3F60C4
 P 3250 3050
 F 0 "#PWR06" H 3250 2800 50  0001 C CNN
@@ -223,7 +253,7 @@ F 3 "" H 3250 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C6
+L CP C6
 U 1 1 5F3F6879
 P 4400 3150
 F 0 "C6" H 4425 3250 50  0000 L CNN
@@ -234,7 +264,7 @@ F 3 "" H 4400 3150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L jar-of-dirt-rescue:POT Tone1
+L POT Tone1
 U 1 1 5F3F8A19
 P 4900 3350
 F 0 "Tone1" V 4725 3350 50  0000 C CNN
@@ -245,7 +275,7 @@ F 3 "" H 4900 3350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C7
+L C C7
 U 1 1 5F3F8B55
 P 4900 2900
 F 0 "C7" H 4925 3000 50  0000 L CNN
@@ -256,7 +286,7 @@ F 3 "" H 4900 2900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:CP C8
+L CP C8
 U 1 1 5F3F932D
 P 3500 2200
 F 0 "C8" H 3525 2300 50  0000 L CNN
@@ -267,7 +297,7 @@ F 3 "" H 3500 2200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L jar-of-dirt-rescue:Audio-Jack-2 J1
+L Audio-Jack-2 J1
 U 1 1 5F3FB3CD
 P 2400 2600
 F 0 "J1" H 2375 2675 50  0000 C CNN
@@ -278,7 +308,7 @@ F 3 "" H 2650 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D D2
+L D D2
 U 1 1 5F41C6B7
 P 2750 2350
 F 0 "D2" H 2750 2450 50  0000 C CNN
@@ -318,14 +348,14 @@ Wire Wire Line
 Wire Wire Line
 	3800 2800 3700 2800
 Wire Wire Line
-	3700 2800 3700 3100
+	3700 2800 3700 3200
 Wire Wire Line
 	4000 3000 4000 3100
 Wire Wire Line
 	4000 3100 3700 3100
 Connection ~ 3700 3100
 Wire Wire Line
-	4400 2700 4900 2700
+	4400 2700 5550 2700
 Wire Wire Line
 	4900 2700 4900 2750
 Wire Wire Line
@@ -333,7 +363,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 3000 4400 3000
 Wire Wire Line
-	4400 3300 4400 3350
+	4400 3300 4400 3550
 Wire Wire Line
 	4250 3250 4250 3400
 Wire Wire Line
@@ -352,32 +382,12 @@ Wire Wire Line
 Wire Wire Line
 	2350 2200 2350 2350
 Wire Wire Line
-	2350 1750 3200 1750
+	2350 1750 4100 1750
 Wire Wire Line
 	2350 2350 2600 2350
 Wire Wire Line
-	2900 2350 3200 2350
+	2900 2350 4000 2350
 Wire Wire Line
 	4100 3250 4250 3250
 Connection ~ 4400 3350
-Wire Wire Line
-	3850 2350 4000 2350
-Wire Wire Line
-	3200 2350 3500 2350
-Wire Wire Line
-	3200 1750 3500 1750
-Wire Wire Line
-	3500 1750 3850 1750
-Wire Wire Line
-	3850 1750 4100 1750
-Wire Wire Line
-	3700 3100 3700 3200
-Wire Wire Line
-	4900 2700 5400 2700
-Wire Wire Line
-	5400 2700 5550 2700
-Wire Wire Line
-	3500 2350 3850 2350
-Wire Wire Line
-	4400 3350 4400 3550
 $EndSCHEMATC
